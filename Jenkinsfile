@@ -46,6 +46,12 @@ pipeline {
                 }
             }
         }
+        stage('Branche') {
+            agent any
+            steps {
+                echo 'new_branch'
+            }
+        }
 
     }
 }
